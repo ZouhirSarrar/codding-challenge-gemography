@@ -1,0 +1,66 @@
+// Google Fonts
+@import url('http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700');
+
+// Font Variables
+$roboto-slab: 'Roboto Slab', serif;   
+$open-sans: 'Open Sans', sans-serif;
+
+// Styles
+body {
+}
+.title {
+  font-size: 25px;
+font-weight: normal;
+}
+.text-style{
+  font-size: smaller;
+  font-weight: lighter;
+  height:90px;
+  margin-top:20;
+}
+  .img-style {
+    position: absolute;
+    height: 150px;
+    width:150px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 5px 5px;
+  }
+
+  .div-style {
+    height: 150px;
+    width:150px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+  }
+
+  .div-style-card {
+    height: 150px;  
+    width:650px;
+    margin-left: 20px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+    
+  }
+
+  .badge_nb{
+    color: darkgray;
+  }
+
+  .column {
+    float: left;
+    width: 16%;
+
+  }
+  
+  .row:after {
+    margin-top: 30;
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+
+  
