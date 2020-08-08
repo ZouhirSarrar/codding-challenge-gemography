@@ -4,7 +4,7 @@ import React from "react";
 import {ThemeProvider,theme,ColorModeProvider,CSSReset,Text} from '@chakra-ui/core'
 import "./stylesheets/style.scss"
 import Boxes from "./components/Boxes"
-import useReposApi from "./components/useReposApi"
+import useReposApi from "./api/useReposApi"
 import RepoCard from "./components/RepoCard"
 import { Waypoint } from "react-waypoint";
 
@@ -23,11 +23,11 @@ const App = () => {
                         <div className="row">
                             <ul className="list-group list-group-flush">
                             {console.log(repos)}
-                            {repos.map((user, idx) => (
+                            {repos.map((repo, idx) => (
                                 <RepoCard
                                 key={idx}
                                 sno={idx + 1}
-                                {...user}
+                                {...repo}
                                 />
                                 ))}
                             </ul>
@@ -36,7 +36,7 @@ const App = () => {
                                         <h5 className="text-muted mt-5">
                                             Loading data{" "}
                                         </h5>
-                                    </Waypoint>
+                  </Waypoint>
                                 )}
                         </div>
         </ColorModeProvider>

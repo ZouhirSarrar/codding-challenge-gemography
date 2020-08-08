@@ -11,13 +11,20 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "emotion-theming": "^10.0.27",
-    "mdi-react": "^7.3.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
     "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "react-waypoint": "^9.0.3"
   },
+  "lint-staged": {
+       "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+         "prettier --write"
+       ]
+     },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
