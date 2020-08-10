@@ -24,17 +24,14 @@ const App = () => {
             Codding Challenge Gemography
           </Text>
           <div className="row">
+            {" "}
             <ul className="list-group list-group-flush">
               {console.log(repos)}
               {repos.map((repo, index) => (
                 <RepoCard key={index} nb={index + 1} {...repo} />
               ))}
-            </ul>
-            {hasNextPage && (
-              <Waypoint onEnter={loadMoreData}>
-                <h5 className="text-muted mt-5">Loading data </h5>
-              </Waypoint>
-            )}
+            </ul>{" "}
+            {hasNextPage && <Waypoint onEnter={loadMoreData}></Waypoint>}
           </div>
         </ColorModeProvider>
       </ThemeProvider>
