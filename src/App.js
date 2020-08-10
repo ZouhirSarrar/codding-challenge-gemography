@@ -21,7 +21,7 @@ const App = () => {
           <CSSReset />
           <Boxes />
           <Text fontSize="5xl" textAlign="center">
-            Codding Challenge Gemography
+            Coding Challenge Gemography
           </Text>
           <div className="row">
             <ul className="list-group list-group-flush">
